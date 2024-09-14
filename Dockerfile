@@ -1,6 +1,6 @@
 FROM centos:7
 
-MAINTAINER "mahinder@gmail.com"
+MAINTAINER "ekam@gmail.com"
 
 RUN yum install java-devel net-tool netstat vim bind-utils -y
 
