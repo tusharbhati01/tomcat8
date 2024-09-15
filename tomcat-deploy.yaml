@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp1
-  namespace: cdts
+  namespace: mytg
 spec:
-  replicas: 4
+  replicas: 5
   selector:
     matchLabels:
      app: tomcat
@@ -14,10 +14,10 @@ spec:
        app: tomcat
     spec:
      imagePullSecrets:
-       - name: tgpasswd
+       - name: mypasswd-for-custom-img
      containers:
        - name: tomcat
-         image:  cdtsbikaner/devopstg13jan2024:BUILD_NUMBER
+         image:  cdtsbikaner/devops150624:BUILD_NUMBER
          ports:
           - containerPort: 8080
       
