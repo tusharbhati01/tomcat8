@@ -17,7 +17,7 @@ spec:
        - name: mypasswd-for-custom-img
      containers:
        - name: tomcat
-         image:  cdtsbikaner/devops150624:BUILD_NUMBER
+         image:  tusharbhati/devpos150624:BUILD_NUMBER
          ports:
           - containerPort: 8080
       
